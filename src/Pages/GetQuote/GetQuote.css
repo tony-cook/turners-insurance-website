@@ -1,0 +1,19 @@
+.content-components {
+  margin-top: -610px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+.tina-image {
+  z-index: 1;
+  position: absolute;
+  top: 13.5rem;
+  left: 20rem;
+  right: 0;
+  bottom: 0;
+  max-height: 300px;
+}
+.tina-image img {
+  max-height: 700px;
+  z-index: 1;
+}
