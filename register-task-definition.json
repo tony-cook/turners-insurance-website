@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:184870188834:task-definition/turners-website-task:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:184870188834:task-definition/turners-website-task:3",
   "containerDefinitions": [
       {
           "name": "turners-website-container",
-          "image": "184870188834.dkr.ecr.ap-southeast-2.amazonaws.com/turners-insurance-deployment",
+          "image": "public.ecr.aws/a9y5y8m8/turners-insurance-deployment",
           "cpu": 0,
           "links": [],
           "portMappings": [
@@ -43,7 +43,7 @@
   "family": "turners-website-task",
   "executionRoleArn": "arn:aws:iam::184870188834:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 1,
+  "revision": 3,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -54,16 +54,10 @@
           "name": "ecs.capability.execution-role-awslogs"
       },
       {
-          "name": "com.amazonaws.ecs.capability.ecr-auth"
-      },
-      {
           "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
       },
       {
           "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
-      },
-      {
-          "name": "ecs.capability.execution-role-ecr-pull"
       },
       {
           "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
@@ -89,7 +83,7 @@
   ],
   "cpu": "1024",
   "memory": "3072",
-  "registeredAt": "2022-03-10T03:45:10.632Z",
+  "registeredAt": "2022-03-10T04:10:15.929Z",
   "registeredBy": "arn:aws:iam::184870188834:root",
   "tags": [
       {
@@ -98,7 +92,7 @@
       },
       {
           "key": "ecs:taskDefinition:stackId",
-          "value": "arn:aws:cloudformation:us-east-1:184870188834:stack/ECS-Console-V2-TaskDefinition-f96737ed-162d-45f6-986b-2d683d04633c/776cd250-a024-11ec-a9f5-0a978f85bcc3"
+          "value": "arn:aws:cloudformation:us-east-1:184870188834:stack/ECS-Console-V2-TaskDefinition-8757e8e0-cfa1-4c58-8e19-9c1ce71d08fa/f9808180-a027-11ec-8b37-0aafec70f747"
       }
   ]
 }
