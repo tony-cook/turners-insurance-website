@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:184870188834:task-definition/turners-website-task:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:184870188834:task-definition/turners-website-task:4",
   "containerDefinitions": [
       {
           "name": "turners-website",
-          "image": "184870188834.dkr.ecr.ap-southeast-2.amazonaws.com/turners-insurance-website:097643d39200ab2ad87472f29eea773f22202208",
+          "image": "public.ecr.aws/a9y5y8m8/turners-insurance-website:latest",
           "cpu": 0,
           "links": [],
           "portMappings": [
@@ -33,13 +33,10 @@
   "family": "turners-website-task",
   "taskRoleArn": "arn:aws:iam::184870188834:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 1,
+  "revision": 4,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
-      {
-          "name": "com.amazonaws.ecs.capability.ecr-auth"
-      },
       {
           "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
       },
@@ -55,18 +52,15 @@
   ],
   "placementConstraints": [],
   "compatibilities": [
-      "EC2"
+      "EC2",
+      "FARGATE"
   ],
-  "runtimePlatform": {
-      "cpuArchitecture": "X86_64",
-      "operatingSystemFamily": "LINUX"
-  },
   "requiresCompatibilities": [
       "EC2"
   ],
   "cpu": "1024",
   "memory": "3072",
-  "registeredAt": "2022-03-10T02:47:03.824Z",
+  "registeredAt": "2022-03-10T03:05:12.552Z",
   "registeredBy": "arn:aws:iam::184870188834:root",
   "tags": [
       {
@@ -75,7 +69,7 @@
       },
       {
           "key": "ecs:taskDefinition:stackId",
-          "value": "arn:aws:cloudformation:ap-southeast-2:184870188834:stack/ECS-Console-V2-TaskDefinition-2d58cf99-4d66-416b-8b15-447dffa34f40/5a43e450-a01c-11ec-9588-062bed5dfb16"
+          "value": "arn:aws:cloudformation:ap-southeast-2:184870188834:stack/ECS-Console-V2-TaskDefinition-a8ebb6cd-6994-4b9a-986f-79de30435b02/e4083950-a01e-11ec-a45e-0a73a74ca2bc"
       }
   ]
 }
