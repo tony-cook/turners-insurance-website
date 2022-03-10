@@ -11,14 +11,14 @@ on:
       - main
 
 env:
-  AWS_REGION: ap-southeast-2                  # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: turners-insurance-website           # set this to your Amazon ECR repository name
-  ECS_SERVICE: turners-website                # set this to your Amazon ECS service name
-  ECS_CLUSTER: default                 # set this to your Amazon ECS cluster name
+  AWS_REGION: us-east-1                  # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REPOSITORY: turners-insurance-deployment           # set this to your Amazon ECR repository name
+  ECS_SERVICE: turners-website-deployment                # set this to your Amazon ECS service name
+  ECS_CLUSTER: turners-website                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: register-task-definition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: turners-website          # set this to the name of the container in the
-                                               # containerDefinitions section of your task definition
+  CONTAINER_NAME: turners-website-container          # set this to the name of the container in the
+                                             # containerDefinitions section of your task definition
 
 jobs:
   deploy:
