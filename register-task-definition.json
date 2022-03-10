@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:184870188834:task-definition/turners-website-task:3",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:184870188834:task-definition/turners-website-task:4",
   "containerDefinitions": [
       {
           "name": "turners-website-container",
-          "image": "public.ecr.aws/a9y5y8m8/turners-insurance-deployment",
+          "image": "turners-insurance-deployment:latest",
           "cpu": 0,
           "links": [],
           "portMappings": [
@@ -43,7 +43,7 @@
   "family": "turners-website-task",
   "executionRoleArn": "arn:aws:iam::184870188834:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 3,
+  "revision": 4,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -83,7 +83,7 @@
   ],
   "cpu": "1024",
   "memory": "3072",
-  "registeredAt": "2022-03-10T04:10:15.929Z",
+  "registeredAt": "2022-03-10T04:19:20.040Z",
   "registeredBy": "arn:aws:iam::184870188834:root",
   "tags": [
       {
@@ -92,7 +92,7 @@
       },
       {
           "key": "ecs:taskDefinition:stackId",
-          "value": "arn:aws:cloudformation:us-east-1:184870188834:stack/ECS-Console-V2-TaskDefinition-8757e8e0-cfa1-4c58-8e19-9c1ce71d08fa/f9808180-a027-11ec-8b37-0aafec70f747"
+          "value": "arn:aws:cloudformation:us-east-1:184870188834:stack/ECS-Console-V2-TaskDefinition-7123c4d5-93da-4e3d-8621-a25f2b2672d5/3e199510-a029-11ec-84d9-0ac1d712b241"
       }
   ]
 }
