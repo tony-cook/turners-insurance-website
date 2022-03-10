@@ -12,12 +12,6 @@ import './QuoteEstimate.css'
 
 function QuoteEstimate() {
     const [value, setValue] = React.useState(new Date());
-    const style = {
-        color:{
-            background: '#bbcee3', 
-            color: "#5481ad"
-        },
-    }
     
   return (
     <div className="quote-estimate-container">
