@@ -3,6 +3,7 @@
   position: relative;
   z-index: 2;
   display: flex;
+  max-width: 1500px;
 }
 .tina-image {
   z-index: 1;

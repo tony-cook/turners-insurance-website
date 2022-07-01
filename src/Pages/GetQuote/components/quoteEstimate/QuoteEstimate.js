@@ -142,7 +142,7 @@ function QuoteEstimate() {
                 <DesktopDatePicker
             label="Drivers' date of birth"
             value={value}
-            minDate={new Date('2017-01-01')}
+            minDate={new Date('1920-01-01')}
             onChange={(newValue) => {setValue(newValue);}}
             size="small"
                 renderInput={(params) => <TextField size="small" className="date-picker" {...params} />}
